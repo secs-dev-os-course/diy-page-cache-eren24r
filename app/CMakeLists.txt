@@ -7,12 +7,10 @@ project(app
 
 cmake_policy(SET CMP0076 NEW) # avoid warning of relative paths translation
 
-add_executable(app
-        ../test/test.cpp
-        ../test/test.h)
+add_executable(app)
 target_include_directories(app PRIVATE ${CMAKE_SOURCE_DIR})
 
 target_sources(app
         PRIVATE
-        app.cpp # or app.cpp
+        app.c # or app.cpp
 )
